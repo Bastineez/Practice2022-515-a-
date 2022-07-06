@@ -16,6 +16,14 @@ int transform(int user_number){
     }
 
     printf("\nYour converted number: ");
+  
+    if (user_number == 0) printf("Zero"); 
+
+    if (user_number < 0) 
+    {
+        printf("Minus ");
+        user_number *= -1;
+    }
 
     while (user_number > 0) 
     {
