@@ -10,17 +10,22 @@
 *
 */
 
-#include "func.h" 
+#include "func.h" // підключення заголовного файлу
 
 int main()
 {
 
-    long long user_number = INFINITY; 
-    
-    printf("Enter the number: "); 
-    scanf_s("%lld", &user_number); 
+    long long user_number = INFINITY; // оголошення змінної 
 
-    if (transform(user_number) == 0) 
+    // цикл перевірки на корректність вводу числа
+    while (user_number < INT_MIN || user_number > INT_MAX) {
+        printf("Enter the number: "); // запрошення до вводу числа
+        scanf_s("%lld", &user_number); // ввід числа
+        if (user_number < INT_MIN || user_number > INT_MAX)
+            printf("Incorrect range!\n");
+    }
+
+    if (transform(user_number) == 0) // виклик функції 
         printf("ERROR!\n"); 
 
     putchar('\n'); 
