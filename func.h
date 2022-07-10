@@ -6,11 +6,11 @@
 // оголошення матриці зі слів
 char* numbers[7][10] = { "one", "two", "three", "four", "five", "six","seven","eight", "nine", "",
                     "ten", "eleven", "twelve", "thirteen","fourteen", "fifteen", "sixteen", "seventeen", "eighteen","nineteen",
-                    "twenty", "thirty", "fourty", "fifty", "sixty","seventy", "eighty", "ninety", " ", " ",
+                    "twenty", "thirty", "forty", "fifty", "sixty","seventy", "eighty", "ninety", " ", " ",
                     "one hundred", "two hundred", "three hundred", "four hundred", "five hundred", "six hundred", "seven hundred", "eight hundred", "nine hundred", "",
-                    "thousands", "thousand", "thousands", "", "", "", "", "", "", "",
-                    "millions", "million", "millions", "", "", "", "", "", "", "",
-                    "billions", "billion", "billions" };
+                    "thousand", "thousand", "thousand", "", "", "", "", "", "", "",
+                    "million", "million", "million", "", "", "", "", "", "", "",
+                    "billion", "billion", "billion" };
 
 /**
 * Розділити введене число на окремі цифри
